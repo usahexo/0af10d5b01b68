@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Android Programming for Beginners How to Create a Blackjack Game with Java | A Carbon Fiber For All Occasions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">A Carbon Fiber For All Occasions</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Shop for carbon fiber products at 8r4796.net</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/categories">Categories</a>
+        
+          <a class="main-nav-link" href="/tags">Tags</a>
+        
+      </nav>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Android-Programming-for-Beginners-How-to-Create-a-Blackjack-Game-with-Java-" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/Android-Programming-for-Beginners-How-to-Create-a-Blackjack-Game-with-Java-/" class="article-date">
+  <time class="dt-published" datetime="2023-01-20T21:25:25.000Z" itemprop="datePublished">2023-01-21</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Jbo098/">Jbo098</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Android Programming for Beginners How to Create a Blackjack Game with Java
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Android-Programming-for-Beginners-How-to-Create-a-Blackjack-Game-with-Java"><a href="#Android-Programming-for-Beginners-How-to-Create-a-Blackjack-Game-with-Java" class="headerlink" title="Android Programming for Beginners: How to Create a Blackjack Game with Java"></a>Android Programming for Beginners: How to Create a Blackjack Game with Java</h1><p>In this tutorial, we are going to create a blackjack game using Java. We will first look at the game’s rules and then write the code for our game.</p>
+<p>To start with, let’s take a quick look at how the game of blackjack is played:<br>The aim of the game is to score as close to 21 as possible, without going over. The player is dealt two cards and the dealer is dealt two cards, one face up and one face down. The player can choose to either take another card (called ‘hit’) or stand. If the player scores 21 with their first two cards (called a ‘blackjack’), they win immediately. If the dealer scores more than 21, they bust and the player wins automatically. If both the player and dealer have the same score, it’s called a ‘push’ and no one wins or loses.</p>
+<p>Now that we know how to play blackjack, let’s start programming our game. Create a new Java project in your favourite IDE and call it Blackjack. In this project, we will create two classes: one for the player and one for the dealer. We will also need an object to store the state of our game. Let’s start by creating our Player class:</p>
+<p>package com.example; import java.util.Random; public class Player { private int playerScore; private Random random &#x3D; new Random(); public Player() { } public Player(int initialScore) { this.playerScore &#x3D; initialScore; } public int getPlayerScore() { return this.playerScore; } public void setPlayerScore(int score) { this.playerScore &#x3D; score; } &#x2F;&#x2F;Other methods omitted for clarity }</p>
+<p>The Player class has two variables: one for the player’s score and one for their random number generator (we will use this later on). The constructor sets the player’s initial score and getPlayerScore() simply returns the current value of playerScore . The setPlayer Score() method allows us to change the player’s score however we like. Now let’s move on to our Dealer class:</p>
+<p>package com.example; import java.util.*; public class Dealer { private int dealerScore; private Random random &#x3D; new Random(); public Dealer() { } public Dealer(int initialScore) { this.dealerScore &#x3D; initialScore; } public int getDealerScore() { return this.dealerScore; } &#x2F;&#x2F;Other methods omitted for clarity }</p>
+<p>The Dealer class is very similar to the Player class except that it has only one variable (for the dealer’s score). Now let’s create our Game object:</p>
+<p>package com.example; import java.*; &#x2F;&#x2F;Other classes omitted for clarity public class Game { private Player player1; private Dealer dealer1; private int currentPlayerTurn&#x3D;1; &#x2F;&#x2F;Other variables omitted for clarity }</p>
+<p>The Game object has three variables: one for each of the players, and one to keep track of whose turn it is currently (we’ll use this later on). We also have a few methods which we will need later on: dealCards() , hit() , stand() , and bust() . Let’s write these now:</p>
+<p>package com.example; import java.<em>; &#x2F;&#x2F;Other classes omitted for clarity &#x2F;</em>* * Method to deal cards <em>&#x2F;public void dealCards(){ System . out . println(“Dealer deals two cards each.”); System . out . println(“Card One:” + dealer1 . getCardOne()); System . out . println(“Card Two:” + dealer1 . getCardTwo()); System . out . println(“Player 1 deals two cards.”); System . out . println(“Card One:” + player1 . getCardOne()); System . out . println(“Card Two:” + player1 . getCardTwo());} &#x2F;</em>* * Hits if their card value is between 12-16 inclusive *&#x2F;public boolean hit(){ return ((player1 . getCardOne() &gt;&#x3D; 12) &amp;&amp; (player1 </p>
+<h1 id="George-Sand-Shows-You-How-to-Program-in-Java-for-Android-Casino-Games"><a href="#George-Sand-Shows-You-How-to-Program-in-Java-for-Android-Casino-Games" class="headerlink" title="George Sand Shows You How to Program in Java for Android Casino Games"></a>George Sand Shows You How to Program in Java for Android Casino Games</h1><p>Do you want to create casino games for Android? George Sand can show you how! </p>
+<p>Although you can program in Java for other types of Android applications, creating casino games requires some specific knowledge. Fortunately, George Sand has all the information you need to get started. </p>
+<p>First, you’ll need to understand the basics of casino game programming. In particular, you need to know how to create the different types of games and determine player odds. </p>
+<p>Once you have the basics down, you can start creating your actual casino games. George Sand has detailed tutorials on how to create blackjack, poker, roulette, and slot machines. You’ll also learn how to integrate these games with social media and other features that will make your players happy. </p>
+<p>So what are you waiting for? Start learning Java programming for casino games today with George Sand!</p>
+<h1 id="Learn-How-to-Program-Java-Android-Blackjack-Games-from-George-Sand"><a href="#Learn-How-to-Program-Java-Android-Blackjack-Games-from-George-Sand" class="headerlink" title="Learn How to Program Java Android Blackjack Games from George Sand!"></a>Learn How to Program Java Android Blackjack Games from George Sand!</h1><p>In this article, we will be learning how to program a Java Android blackjack game from George Sand. First, we will be learning the basics of Java programming, such as what classes and objects are, and how to create and use them. We will then learn how to program the game itself, including the rules of blackjack and how to handle player and dealer moves. Finally, we will create a simple user interface for the game.</p>
+<p> Let’s get started!</p>
+<p>The Basics of Java Programming</p>
+<p>In order to program a Java Android blackjack game, we first need to understand the basics of Java programming. In Java, classes are defined as blueprints for objects, while objects are instances of classes that contain variables and methods. We can create a class by defining its name and its attributes (the variables that it contains), and we can create an object by invoking the class with its name and specifying the values for its attributes.</p>
+<p>For example, let’s say we want to create a class called Card that contains two attributes: rank (e.g., 2 or King) and suit (e.g., Spades or Clubs). We could write the following code:</p>
+<p>class Card { int rank; String suit; }</p>
+<p>We can then create an instance of Card by specifying values for its rank and suit variables:</p>
+<p>Card kingOfClubs &#x3D; new Card(rank: 13, suit: “Clubs”);</p>
+<p>We can also access the rank and suit variables of an object by using their respective getters and setters:</p>
+<p>kingOfClubs.rank &#x3D; 13;   &#x2F;&#x2F; Sets the rank variable to 13 	kingOfClubs.suit &#x3D; “Clubs”; &#x2F;&#x2F; Sets the suit variable to “Clubs” </p>
+<p> The full code for our Card class would then look like this:<br>class Card { int rank; String suit; public void setRank(int newRank) { rank &#x3D; newRank; } public int getRank() { return rank; } public void setSuit(String newSuit) { suit &#x3D; newSuit; } public String getSuit() { return suit; } }</p>
+<p>Notice that in order for a method or variable to be accessible from outside of a class, it must be declared as public . The other modifiers ( private , protected , and default ) allow us to control access to methods and variables respectively. For more information on these modifiers, see the Java documentation on access control . </p>
+<pre><code>Now that we have created our Card class, let’s try using it in a program. We can do this by creating a new file called BlackJack.java and writing the following code into it:	public class BlackJack &#123; 	public static void main(String[] args) &#123; 	 Card deck[] = new Card[52]; // Creates an array containing 52 cards 	 int playerHandSize = 5; // Number of cards in player&#39;s hand 	 int dealerHandSize = 7; // Number of cards in dealer&#39;s hand 	 boolean hasDealerBlackjack = false; // Flag indicating whether dealer has blackjack 	 int playerScore = 0; // Player&#39;s score so far 	 int dealerScore = 0; // Dealer&#39;s score so far 	 long timeCounter = 0L; // Time counter 	 while (hasDealerBlackjack == false) &#123; // Until dealer doesn&#39;t have blackjack... 	 System.out.println(&quot;Welcome to my Java Android blackjack game!&quot;); // Displays introduction message 	 timeCounter++; // Increments time counter 	 System.out.println(); // Outputs blank line for readability sake 	 System.out.println(&quot;You are playing against the dealer.&quot;); // Tells player what they&#39;re playing against 	 System.out.println(&quot;The dealer&#39;s cards are:&quot;); // Prints out dealer&#39;s cards here...
+</code></pre>
+<p> ?dealerHandSize + “:” + deck[0].rank + “:” + deck[0].suit); &#x2F;&#x2F; …and prints out their ranks and suits here } while ((playerScore &lt; 21) &amp;&amp; (dealerScore &lt; 21)) {&#x2F;&#x2F; Processes both players’ turns if (playerScore &gt; dealerScore) { System.out.println(“You win! Dealer busts with “ + dealerScore + “ points.”); break;} else if (playerScore &#x3D;&#x3D; dealerScore) { System.out.println(“It’s a tie!”);} else if (playerScore &lt; dealerScore) {System.out .println(“You lose! Dealer wins with “ + dealerScore + “ points.”);} else{System .out .println(“Insufficient data.”);}}System .out .println();&#x2F;&#x2F; Outputs final message System .exit(0);&#x2F;&#x2F; Exits application } }</p>
+<p> The main() method is where our</p>
+<h1 id="George-Sand-Teaches-You-How-to-Create-a-Java-Android-Blackjack-Game"><a href="#George-Sand-Teaches-You-How-to-Create-a-Java-Android-Blackjack-Game" class="headerlink" title="George Sand Teaches You How to Create a Java Android Blackjack Game"></a>George Sand Teaches You How to Create a Java Android Blackjack Game</h1><p>Hello, and welcome to my Android blackjack game development tutorial! In this article, we will be discussing how to create a basic blackjack game using Java and the Android SDK. As we go along, we will also be learning some important aspects of game development, such as card handling, animation, and user input. So without further ado, let’s get started!</p>
+<p>The first thing that we need to do is set up our project. For this tutorial, I am going to be using Android Studio, but you can use any IDE or even just a text editor if you prefer. You can find the source code for this project on GitHub . Once you have your development environment set up, open up Android Studio and create a new project called “Blackjack”.</p>
+<p>Next, we need to add the necessary dependencies for our project. We will be using the Android SDK version 27 and Java 8. To add these dependencies, open up the build.gradle file for your project and add the following lines:</p>
+<p>apply plugin: ‘com.android.application’ android { compileSdkVersion 27 defaultConfig { applicationId “com.blackjack” minSdkVersion 15 targetSdkVersion 27 versionCode 1 versionName “1.0” } } dependencies { implementation fileTree(dir: ‘libs’, include: [‘*.jar’]) implementation ‘com.android.support:appcompat-v7:27.1.1’ &#x2F;&#x2F; Card handling library implementation ‘javax.imageio:javax.imageio-core:2.2’ &#x2F;&#x2F; For loading images from a resource folder implementation ‘com.android.support:design:27.1.1’ &#x2F;&#x2F; For scaling icons and other interface elements }</p>
+<p>Now that our project is set up and our dependencies are added, we can start writing some code! The first thing that we need to do is create a class called “BlackjackGame” which will contain all of the code for our game logic. In this class, we will define a few constants which will allow us to keep track of the state of the game:</p>
+<p>private final int NUM_CARDS &#x3D; 52; private final String DEALER_NAME &#x3D; “Dealer”; private final String PLAYER_NAME &#x3D; “Player”; private final int CARD_VALUE_Aces &#x3D; 1; private final int CARD_VALUE_Tens &#x3D; 10; private final int CARD_VALUE_Kings &#x3D; 13; private final int CARD_VALUE_Queens &#x3D; 14; private final int CARD_VALUE_Jacks &#x3D; 12;</p>
+<p>In addition to these constants, we will also need an instance variable to represent the deck of cards:</p>
+<p> Deck deck;</p>
+<p>Now let’s take a look at the constructor for our BlackjackGame class:</p>
+<p> BlackjackGame(Context context) { super(context); deck &#x3D; Deck(); initGame(); }</p>
+<p>The constructor simply calls super , sets up our Deck instance variable, and calls initGame() . We will implement initGame() in a bit, but first let’s take a look at the methods that we will be using to interact with the player and dealer:</p>
+<p> public void dealCards(int playerIndex) { Card card &#x3D; deck .getCard(playerIndex); switch (card .getType()) { case SUITABLE : break ; case UNSUITABLE : playersWon++; &#x2F;&#x2F; When player gets an unsuitable card dealersWon–; break ; default : System .out .println( “Unknown card type” ); } } public boolean isPlayerWinner() { return playersWon &gt; 0; }</p>
+<p>Themethod deals a single card to the given player index and updates various state variables depending on the type of card dealt. Themethod simply checks whether the player has won or not based on the number of cards they have won so far. Now let’s take a look at how we handle user input:</p>
+<p> @Override public boolean onKeyDown( KeyEvent event) { if (event .isACTIONDOWN()) { KeyCode keyCode &#x3D; event .getKeyCode(); switch (keyCode) { case KeyEvent .KEYCODE_ENTER : &#x2F;&#x2F; When player hits enter key finish(); return true ; default : return false ; } } return false ; }</p>
+<p>In onKeyDown() , we check for any ACTIONDOWN events and retrieve the corresponding KeyCode value from event . We then switch on keyCode to handle different actions such as ENTERING or LEAVING THE GAME etc.. Finally, let’s take a look at initGame() which sets up all of the initial game state variables:</p>
+<p> protected void initGame() throws IOException { Integer dealerHandValue &#x3D; 0; Integer playerHandValue &#x3D; 0; Scanner scanner &#x3D; new Scanner (System .in); while (!scanner</p>
+<h1 id="Android-Programming-Creating-Your-First-Java-Based-Blackjack-Game"><a href="#Android-Programming-Creating-Your-First-Java-Based-Blackjack-Game" class="headerlink" title="Android Programming: Creating Your First Java Based Blackjack Game"></a>Android Programming: Creating Your First Java Based Blackjack Game</h1><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>In this article, we are going to walk you through the process of creating your very first Android-based blackjack game. This game will be programmed in Java, and will be able to run on devices that are powered by the Android operating system.</p>
+<p>Blackjack is a card game that is widely popular in both casinos and at home. The objective of the game is to beat the dealer by either getting a higher score than the dealer, or by having the dealer bust (i.e. go over 21). In this article, we are going to create a basic blackjack game where you can play against the dealer. The game will include the following features:</p>
+<ul>
+<li><p>A basic user interface that allows you to view your current score and the dealer’s score</p>
+</li>
+<li><p>A way to bet on each hand</p>
+</li>
+<li><p>A method for drawing cards</p>
+</li>
+<li><p>A method for checking whether you have won or lost</p>
+</li>
+</ul>
+<p>We will be assuming that you have some basic knowledge of Android programming in this article. If you are new to Android programming, we recommend that you check out some of our other Android programming articles first. You can find a list of these articles at the bottom of this article. Let’s get started!</p>
+<h2 id="Creating-The-User-Interface"><a href="#Creating-The-User-Interface" class="headerlink" title="Creating The User Interface"></a>Creating The User Interface</h2><p>In order to create a user interface for our blackjack game, we will be using Android’s Layout Editor tool. This tool allows us to design our user interface by dragging and dropping various controls onto a canvas. We can then also configure these controls to suit our needs. To open up the Layout Editor, open up your project’s main activity file (usually called MainActivity.java) and click on the “Design” tab at the top of the file:</p>
+<p> eah control’s properties in more detail later on). For now, let’s just add a few controls to our user interface so that it looks like Figure 1 below: - An ImageView control that will display the image of a playing card - Two TextView controls that will display the player’s score and dealer’s score - A Button control that will allow us to bet on each hand We will also need an XML layout file for our user interface. This file contains all of the information about our user interface layout, such as which controls are used and their properties. To create this file, right-click on your project’s “res” folder and select “New” &gt; “Layout File”. Enter “blackjack_ui” as the file name and click “OK”. Now open up this file in your favourite text editor and add the following code: <?xml version="1.0" encoding="utf-8"?> <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent"> <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/card"/> <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"/> <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall"/> </LinearLayout> Notice how our XML layout file simply contains a nested LinearLayout control with three child controls – an ImageView control, two TextView controls, and a Button control. Now we need to associate this XML layout file with our activity class. Open up MainActivity.java and add the following line of code somewhere in the onCreate() method (note how we use setContentView() to specify which layout file should be used): setContent View(R .lay out&#x2F;bla ckja ck _ ui) ; This tells Android that we want to use our blackjack_ui XML layout file as part of our activity user interface layout. If everything is set up correctly, you should now be able to run your application and see something like Figure 1 below (note how our ImageView control displays a playing card image):Figure 1 - Our blackjack user interface So far so good! In the next section, we’ll start programming our game logic into these user interface controls.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://8r4796.net/Android-Programming-for-Beginners-How-to-Create-a-Blackjack-Game-with-Java-/" data-id="cld516g7s0000t8v57ikb5oqf" data-title="Android Programming for Beginners How to Create a Blackjack Game with Java" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Bingo/" rel="tag">Bingo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Casino/" rel="tag">Casino</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Casino-Game/" rel="tag">Casino Game</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Live-Casino/" rel="tag">Live Casino</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Online-Games/" rel="tag">Online Games</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Slot-Machine/" rel="tag">Slot Machine</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/Why-are-stop-markers-called-Mauritius/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Why are stop markers called Mauritius</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bingo/" rel="tag">Bingo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Cash-Camel-Game/" rel="tag">Cash Camel Game</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Casino/" rel="tag">Casino</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Casino-Game/" rel="tag">Casino Game</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Fresno-Casino/" rel="tag">Fresno Casino</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/" rel="tag">Game</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Live-Casino/" rel="tag">Live Casino</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Melbet-Casino/" rel="tag">Melbet Casino</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Musketeer-Slot-Game/" rel="tag">Musketeer Slot Game</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/New-Casino/" rel="tag">New Casino</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Online-Casino/" rel="tag">Online Casino</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Online-Games/" rel="tag">Online Games</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Poker/" rel="tag">Poker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Slot-Machine/" rel="tag">Slot Machine</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tv-Game/" rel="tag">Tv Game</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/Android-Programming-for-Beginners-How-to-Create-a-Blackjack-Game-with-Java-/">Android Programming for Beginners How to Create a Blackjack Game with Java</a>
+          </li>
+        
+          <li>
+            <a href="/Why-are-stop-markers-called-Mauritius/">Why are stop markers called Mauritius</a>
+          </li>
+        
+          <li>
+            <a href="/'How-to-enjoy-buzz-bingo-Shakespeare---and-beat-the-competition!'/">How to enjoy buzz bingo Shakespeare   and beat the competition!</a>
+          </li>
+        
+          <li>
+            <a href="/How-To-Win-Slot-Equipment-In-Casino-Loescher---some-tips!/">How To Win Slot Equipment In Casino Loescher   some tips!</a>
+          </li>
+        
+          <li>
+            <a href="/George-Sand-The-Best-Hand-in-Poker/">George Sand The Best Hand in Poker</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/4rabet-Casino/">4rabet Casino</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Carbon-Fiber/">Carbon Fiber</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Casino-Slot/">Casino Slot</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Comeon-Casino/">Comeon Casino</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Gambling/">Gambling</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Gambling-Sites/">Gambling Sites</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hollywood-Gambling/">Hollywood Gambling</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hyper-Strike-Game/">Hyper Strike Game</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Jbo098/">Jbo098</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Live-Casino-House/">Live Casino House</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Online-Casino/">Online Casino</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Online-Gambling/">Online Gambling</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Parimatch-Casino/">Parimatch Casino</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/bet365/">bet365</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/hollywood-gambling/">hollywood gambling</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a></li></ul>
+    </div>
+  </div>
+
+  
+  
+</aside>
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2023 By Autoload<br>
+      Driven - <a href="https://8r4796.net" target="_blank">Wide Morales</a>|Theme - <a href="https://8r4796.net" target="_blank">A Carbon Fiber For All Occasions</a>
+    </div>
+    <div id="footer-link" class="inner">
+      
+       <span>Links:</span>
+                    
+                    <a target="_blank" rel="noopener" href="https://choegocasino.com/" class="animsition-link">카지노사이트</a>
+                    
+            
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
